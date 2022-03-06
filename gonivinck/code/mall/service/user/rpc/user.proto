@@ -22,7 +22,7 @@ message RegisterRequest {
   string Name = 1;
   int64 Gender = 2;
   string Mobile = 3;
-  int64 Password = 4;
+  string Password = 4;
 }
 
 message RegisterResponse {

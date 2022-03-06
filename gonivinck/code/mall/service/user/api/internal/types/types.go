@@ -8,7 +8,7 @@ type LoginRequest struct {
 
 type LoginResponse struct {
 	AccessToken  string `json:"accessToken"`
-	AccessExpire string `json:"assessExpire"`
+	AccessExpire int64  `json:"assessExpire"`
 }
 
 type RegisterRequest struct {

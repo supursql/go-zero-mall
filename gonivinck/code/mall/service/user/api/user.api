@@ -5,7 +5,7 @@ type (
 	}
 	LoginResponse {
 		AccessToken  string `json:"accessToken"`
-		AccessExpire string `json:"assessExpire"`
+		AccessExpire int64  `json:"assessExpire"`
 	}
 
 	RegisterRequest {
