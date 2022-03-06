@@ -1,0 +1,30 @@
+Name: order.rpc
+ListenOn: 0.0.0.0:9003
+Etcd:
+  Hosts:
+    - etcd:2379
+  Key: order.rpc
+
+  ......
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - etcd:2379
+    Key: user.rpc
+
+ProductRpc:
+  Etcd:
+    Hosts:
+      - etcd:2379
+    Key: product.rpc
+
+OrderRpc:
+  Etcd:
+    Hosts:
+      - etcd:2379
+    Key: order.rpc
+
+Auth:
+  AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
+  AccessExpire: 86400
